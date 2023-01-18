@@ -1,2 +1,2 @@
 const app= require('./app')
-console.log(app.v)
+console.log(app.z())
