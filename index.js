@@ -8,9 +8,11 @@
 // console.log(arrs)
 // const fs =require('fs');
 // fs.writeFileSync("ggggggg.js","aaaaaaaadddddddddddddddrrrr")
-const http =require('http');
+// const http =require('http');
 
-http.createServer((req,resp)=>{
-    resp.write("<h1>sf dgg fafjuhuhujhhaf af</h1>");
-    resp.end();
-}).listen(4500);
+// http.createServer((req,resp)=>{
+//     resp.write("<h1>sf dgg fafjuhuhujhhaf af</h1>");
+//     resp.end();
+// }).listen(4500);
+var colors = require('colors');
+console.log("package".green)
