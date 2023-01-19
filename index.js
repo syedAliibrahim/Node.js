@@ -14,5 +14,17 @@
 //     resp.write("<h1>sf dgg fafjuhuhujhhaf af</h1>");
 //     resp.end();
 // }).listen(4500);
-var colors = require('colors');
-console.log("package".green)
+// var colors = require('colors');
+// console.log("package".green)
+
+
+//////////////////////API
+
+const http =require('http');
+const data = require('./data');
+http.createServer((req,resp)=>{
+    resp.writeHead(200,{'content-type':'app\json'});
+    resp.write(JSON.stringify(data));
+    resp.end();
+
+}).listen(5000)
