@@ -6,5 +6,11 @@
 //     return i ===3
 // })
 // console.log(arrs)
-const fs =require('fs');
+// const fs =require('fs');
 // fs.writeFileSync("ggggggg.js","aaaaaaaadddddddddddddddrrrr")
+const http =require('http');
+
+http.createServer((req,resp)=>{
+    resp.write("<h1>sf dgg fafjuhuhujhhaf af</h1>");
+    resp.end();
+}).listen(4500);
