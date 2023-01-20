@@ -20,11 +20,38 @@
 
 //////////////////////API
 
-const http =require('http');
-const data = require('./data');
-http.createServer((req,resp)=>{
-    resp.writeHead(200,{'content-type':'app\json'});
-    resp.write(JSON.stringify(data));
-    resp.end();
+// const http =require('http');
+// const data = require('./data');
+// http.createServer((req,resp)=>{
+//     resp.writeHead(200,{'content-type':'app\json'});
+//     resp.write(JSON.stringify(data));
+//     resp.end();
 
-}).listen(5000)
+// }).listen(5000)
+
+
+// const fs =require('fs');
+// const path =require('path');
+// const dirPath=path.join(__dirname,'files');
+// for(i=0;i<5;i++)
+// {
+//     fs.writeFileSync("dirPath+"/helllo "+i+".txt","a dadd ff ");
+// }
+// fs.readdir(dirPath,(err,files)=>{
+
+// })
+
+
+const fs=require('fs');
+const path = require('path')
+const dirPath= path.join(__dirname,'crud');
+const filePath= `${dirPath}/apple.txt`;
+
+// fs.writeFileSync(filePath,'this is a simple');
+// fs.readFile(filePath,'utf8',(err,item)=>{
+//     console.log(item)
+// })
+// fs.appendFile(filePath,'and file name is apple.txt',(err)=>{
+//     if(!err) console.log("updated")
+// })
+// fs.unlinkSync(`${dirPath}/apple.txt`)
