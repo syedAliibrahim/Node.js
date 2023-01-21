@@ -55,3 +55,8 @@
 //     if(!err) console.log("updated")
 // })
 // fs.unlinkSync(`${dirPath}/apple.txt`)
+
+app.get("/user" ,(req, resp)=>{
+    resp.send("hello worldaaaaaaaapppppppppppi")
+})
+app.listen(PORT,()=>console.log(`server running on http://localhost:${4000}`))

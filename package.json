@@ -4,7 +4,9 @@
   "description": "firstjson",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start" : "node indexE.js",
+    "dev" :"nodemon indexE.js"
   },
   "repository": {
     "type": "git",
